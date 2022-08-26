@@ -1,0 +1,45 @@
+body {
+    padding-top: 2rem;
+    font-family: Eurostile, open sans,helvetica neue,Helvetica,Arial,sans-serif;
+    text-decoration-color: burlywood;
+    font-style: normal;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    background-color: #282c34;
+}
+
+/* ----------------------------------------------------------- Layout --- */
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.pageContent {
+    z-Index: 3;
+    position: absolute;
+    top: 15%;
+    bottom:0 ;
+    left: 5%;
+    right: 5%;
+    flex-direction: row;
+    align-items: normal;
+    /*justify-content: center;*/
+}
+
+h1 {
+    font-family: Eurostile;
+    color: #00adef;
+    font-kerning: normal;
+}
+
+h2 {
+    color: aliceblue;
+}
+
+h3 {
+    color: #ff00cb;
+}
+
+
