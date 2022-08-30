@@ -1,24 +1,26 @@
-body {
-    padding-top: 2rem;
-    font-family: Eurostile,open sans,helvetica neue,Helvetica,Arial,sans-serif;
-    text-decoration-color: burlywood;
-    font-style: normal;
-    scroll-behavior: smooth;
-    -webkit-font-smoothing: antialiased;
-    background-color: #18221d;
-}
+/*body {*/
+/*    padding-top: 2rem;*/
+/*    font-family: Eurostile, open sans, helvetica neue, Helvetica, Arial, sans-serif;*/
+/*    text-decoration-color: burlywood;*/
+/*    font-style: normal;*/
+/*    scroll-behavior: smooth;*/
+/*    -webkit-font-smoothing: antialiased;*/
+/*    background-color: #18221d;*/
+/*}*/
 
 /* ----------------------------------------------------------- Layout --- */
+.page {
+    margin-left: 2rem;
+}
 
-.pageContent {    
-    z-Index: 3;
+.pageContent {
     position: relative;
     top: 15%;
-    bottom:0;
+    bottom: 0;
     left: 5%;
     right: 5%;
     flex-direction: row;
-    align-items: normal;  
+    align-items: normal;
     /* justify-content: center; */
 }
 
@@ -37,7 +39,7 @@ h3 {
     color: aliceblue;
 }
 
-.jumbo {   
+.jumbo {
     max-width: 600px;
     padding: 10%;
     margin-top: 5px;
@@ -47,7 +49,7 @@ h3 {
     border-radius: 10px;
 }
 
-.JumboImage {    
+.JumboImage {
     width: 600px;
 }
 
@@ -60,36 +62,14 @@ h3 {
 /* ------------------------------------------------------------ Nav Top */
 .nav-top {
     background-color: darkgoldenrod;
-    position:flex;
-    width:100%;
+    position: fixed;
+    width: 100%;
     height: 50px;
 }
 
 /* ------------------------------------------------------------ Grid */
-.wrapper {
-    display: grid;
-   
-    background-color: white;
-    /* grid-template-columns: 80px auto 80px; */
-    grid-template-columns: 5rem auto 5rem;
-    grid-template-rows: auto auto auto;
-    gap: 10px;
-}
 
-
-.gridTop {
-    grid-row: 1;
-}
-
-.gridBottom {
-    grid-row: 3;
-}
-
-.fullWidth {  
-    grid-column: 1 / 3;
-}
-
-.centered {
-    grid-column: 2 / 2;
-    grid-row: 2 / 2;
+.container {
+    display: flex;
+    flex-direction: row;
 }

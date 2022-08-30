@@ -1,13 +1,24 @@
 import React from "react";  // import React (to provide access to TSX)
 
-const PhotoViewer = ( props ) => {        
-    return (           
-        <div className = "centered" > 
-            <h1>React Photo Viewer</h1>   
+const PhotoViewer = ({images}) => {
+    return (
+        <div className="">
             <h2>Hello World!</h2>
-            <img className = "JumboImage" src = { props.image } alt="" />
+            <div>
+                {
+                    images.map((url, index) => {
+                        return (
+                            <div key={index} style={{height: "auto", width: "30%"}}>
+                                <div className="">
+                                    <img src={url} alt="image"/>
+                                </div>
+                            </div>
+                        );
+                    })
+                }
+            </div>
         </div>
-    );
+    )
 }
 
-export default PhotoViewer ;
+export default PhotoViewer;

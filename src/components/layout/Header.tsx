@@ -3,8 +3,9 @@ import NavBar from "./NavBar";
 
 const Header = () => {
     return (
-        <div className="fullWidth gridTop">
-            <NavBar links={[]} />
+        <div className="cell">
+
+            <h1>React Photo Viewer</h1>
         </div>
     );
 }

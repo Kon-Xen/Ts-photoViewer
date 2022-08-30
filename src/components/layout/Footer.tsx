@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
     return (
-        <div className="fullWidth gridBottom">
-            <h1>this is the footer</h1>
+        <div className="cell">
+            <h1>This is the footer</h1>
         </div>
     );
 }
